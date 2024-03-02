@@ -1,0 +1,42 @@
+/* Common Css Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+:root {
+  --primary: #12132d;
+  --secondary: #797dfc;
+  --description: #12132d99;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+.text-description {
+    color: var(--description)
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+/* Common Css End */
