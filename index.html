@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom Css link -->
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Tailwind css and DaisyUI Link -->
     <link
@@ -27,15 +29,12 @@
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-              
+              clifford: "#da373d",
             },
-            backgroundImage: {
-              
-            }
-          }
-        }
-      }
+            backgroundImage: {},
+          },
+        },
+      };
     </script>
   </head>
   <body>
@@ -114,11 +113,15 @@
           </div>
         </div>
         <div
-          class="bg-[#12132D] p-[20px] lg:p-[100px] rounded-[32px] bg-[url('./images/bgbanner.png')] bg-no-repeat bg-bottom bg-cover h-auto lg:h-[600px] mt-6"
+          class="bg-[#12132D] p-[20px] lg:p-[120px] lg:rounded-[32px] bg-[url('./images/bgbanner.png')] bg-no-repeat bg-bottom bg-cover h-auto mt-6"
         >
-          <div class="flex flex-col lg:flex-row items-center lg:gap-[35px] space-y-6 lg:space-y-0">
-            <div class="w-[100%] lg:w-[55%] space-y-8 text-center lg:text-start">
-              <h1 class="text-white text-[24px] lg:text-[64px] font-black">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:gap-[35px] space-y-6 lg:space-y-0"
+          >
+            <div
+              class="w-[100%] lg:w-[55%] space-y-8 text-center lg:text-start"
+            >
+              <h1 class="text-white text-[24px] lg:text-[60px] font-black">
                 Welcome to the <br />
                 <span class="text-[#797DFC]">LaughBeatCode</span> Forum
               </h1>
@@ -126,33 +129,160 @@
                 Share your favorite opinion and win and wp forum coffee mug!
               </p>
               <div class="relative">
-                <input class="h-[50px] w-[100%] lg:w-[60%] rounded-[32px] bg-white px-[20px] outline-none" type="text" placeholder="Search here anything" />
-                <button class="absolute right-1 lg:right-[41%] top-[4px] lg:top-[2px] rounded-[50px] bg-[#797DFC] px-[20px] py-[8px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white">Search</button>
+                <input
+                  class="h-[50px] w-[100%] lg:w-[60%] rounded-[32px] bg-white px-[20px] outline-none"
+                  type="text"
+                  placeholder="Search here anything"
+                />
+                <button
+                  class="absolute right-1 lg:right-[41%] top-[4px] lg:top-[2px] rounded-[50px] bg-[#797DFC] px-[20px] py-[8px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white"
+                >
+                  Search
+                </button>
               </div>
             </div>
-            <div class="w-[100%] lg:w-[45%] bg-white rounded-[32px] p-[50px] space-y-6">
+            <div
+              class="w-[100%] lg:w-[45%] bg-white rounded-[32px] p-[50px] space-y-6"
+            >
               <div class="flex justify-between">
-                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Registered Users</h4>
-                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">01</p>
+                <h4
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  Registered Users
+                </h4>
+                <p
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  01
+                </p>
               </div>
               <div class="flex justify-between">
-                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Forum</h4>
-                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">05</p>
+                <h4
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  Forum
+                </h4>
+                <p
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  05
+                </p>
               </div>
               <div class="flex justify-between">
-                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Topics</h4>
-                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">01</p>
+                <h4
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  Topics
+                </h4>
+                <p
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  01
+                </p>
               </div>
               <div class="flex justify-between">
-                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Replies</h4>
-                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">02</p>
+                <h4
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  Replies
+                </h4>
+                <p
+                  class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium"
+                >
+                  02
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="discuss m-[100px]">
+        <div class="container mx-auto">
+          <h4 class="text-[40px] text-[#12132D] font-black text-center mb-6">
+            Let’s Discuss
+          </h4>
+          <p
+            class="w-[60%] mx-auto text-center text-[#12132D99] text-[18px] font-inter font-normal"
+          >
+            Welcome to our vibrant community where coding meets fun and music!
+            In this dynamic forum, we celebrate the fusion of technology,
+            creativity, and artistic expression. Whether you're a seasoned
+            developer, a music enthusiast, or simply someone who loves to
+            explore the intersection of these diverse worlds, you've come to the
+            right place.
+          </p>
+          <div class="flex flex-row mt-[50px]">
+            <div id="post-container" class="w-[60%]">
+               <!-- <div
+                class="post flex flex-row mb-5 bg-[#F3F3F5] rounded-[24px] p-[40px] gap-[24px]"
+              >
+                <div class="relative">
+                  <img
+                    class="h-[72px] w-[72px] bg-white rounded-2xl"
+                    src="./images/edit.png"
+                    alt=""
+                  />
+                  <div class="bg-[#10B981] rounded-full w-[20px] h-[20px] absolute top-0 right-0"></div>
+                </div>
+                <div class="w-[100%] space-y-4">
+                  <div class="flex gap-8">
+                    <h4
+                      class="text-[#12132DCC] text-[14px] font-inter font-medium"
+                    >
+                      #Music
+                    </h4>
+                    <h4
+                      class="text-[#12132DCC] text-[14px] font-inter font-medium"
+                    >
+                      Author : Awlad Hossain
+                    </h4>
+                  </div>
+                  <h2 class="text-[#12132D] text-[20px] font-bold">
+                    10 Kids Unaware of Their Halloween Costume
+                  </h2>
+                  <p
+                    class="w-[90%] text-[#12132D99] text-[16px] font-inter font-normal border-b border-dashed border-[#12132D40] pb-4"
+                  >
+                    It’s one thing to subject yourself to ha Halloween costume
+                    mishap because, hey that’s your prerogative
+                  </p>
+                  <div class="flex justify-between pt-4">
+                    <div class="icon flex space-x-16">
+                      <div>
+                        <div class="flex space-x-4">
+                          <img class="" src="./images/comment.png" alt="" />
+                          <span class="text-[16px] text-[#12132D99] font-normal font-inter">560</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex space-x-4">
+                          <img src="./images/eye.png" alt="" />
+                          <span class="text-[16px] text-[#12132D99] font-normal font-inter"> 560</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="flex space-x-4">
+                          <img src="./images/clock.png" alt="" />
+                          <span class="text-[16px] text-[#12132D99] font-normal font-inter">560</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <img src="./images/email.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div id="mark-as-read-container" class="w-[40%]"></div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
