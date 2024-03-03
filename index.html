@@ -22,6 +22,21 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              
+            },
+            backgroundImage: {
+              
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -49,22 +64,90 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-              <li title="Home"><img class="inline w-[30%] mb-[40px]" src="./images/home.png" alt=""></li>
-              <li title="Edit"><img class="inline w-[30%] mb-[40px]" src="./images/edit.png" alt=""></li>
-              <li title="Add"><img class="inline w-[30%] mb-[40px]" src="./images/add.png" alt=""></li>
-              <li title="Flag"><img class="inline w-[30%] mb-[40px]" src="./images/flag.png" alt=""></li>
+                <li title="Home">
+                  <img
+                    class="inline w-[30%] mb-[40px]"
+                    src="./images/home.png"
+                    alt=""
+                  />
+                </li>
+                <li title="Edit">
+                  <img
+                    class="inline w-[30%] mb-[40px]"
+                    src="./images/edit.png"
+                    alt=""
+                  />
+                </li>
+                <li title="Add">
+                  <img
+                    class="inline w-[30%] mb-[40px]"
+                    src="./images/add.png"
+                    alt=""
+                  />
+                </li>
+                <li title="Flag">
+                  <img
+                    class="inline w-[30%] mb-[40px]"
+                    src="./images/flag.png"
+                    alt=""
+                  />
+                </li>
               </ul>
             </div>
-            <a class="text-[16px] lg:text-[36px] text-primary font-black cursor-pointer">LaughBeatCode</a>
+            <a
+              class="text-[16px] md:text-[30px] lg:text-[36px] text-primary font-black cursor-pointer"
+              >LaughBeatCode</a
+            >
           </div>
-          <div class="navbar-end ">
+          <div class="navbar-end">
             <ul class="menu menu-horizontal px-1 hidden lg:flex">
-              <li title="Home"><img src="./images/home.png" alt=""></li>
-              <li title="Edit"><img src="./images/Edit.png" alt=""></li>
-              <li title="Add"><img src="./images/add.png" alt=""></li>
-              <li title="Flag"><img src="./images/flag.png" alt=""></li>
+              <li title="Home"><img src="./images/home.png" alt="" /></li>
+              <li title="Edit"><img src="./images/Edit.png" alt="" /></li>
+              <li title="Add"><img src="./images/add.png" alt="" /></li>
+              <li title="Flag"><img src="./images/flag.png" alt="" /></li>
             </ul>
-            <button class="rounded-[50px] bg-[#797DFC] px-[20px] lg:px-[40px] py-[10px] lg:py-[15px] text-[16px] lg:text-[20px] font-bold text-white ml-0 lg:ml-[10px]">Button</button>
+            <button
+              class="rounded-[50px] bg-[#797DFC] px-[20px] md:px-[30px] lg:px-[40px] py-[10px] md:py-[10px] lg:py-[15px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white ml-0 md:ml[10px] lg:ml-[10px]"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+        <div
+          class="bg-[#12132D] p-[20px] lg:p-[100px] rounded-[32px] bg-[url('./images/bgbanner.png')] bg-no-repeat bg-bottom bg-cover h-auto lg:h-[600px] mt-6"
+        >
+          <div class="flex flex-col lg:flex-row items-center lg:gap-[35px] space-y-6 lg:space-y-0">
+            <div class="w-[100%] lg:w-[55%] space-y-8 text-center lg:text-start">
+              <h1 class="text-white text-[24px] lg:text-[64px] font-black">
+                Welcome to the <br />
+                <span class="text-[#797DFC]">LaughBeatCode</span> Forum
+              </h1>
+              <p class="text-[#FFFFFFCC] text-[20px] font-medium">
+                Share your favorite opinion and win and wp forum coffee mug!
+              </p>
+              <div class="relative">
+                <input class="h-[50px] w-[100%] lg:w-[60%] rounded-[32px] bg-white px-[20px] outline-none" type="text" placeholder="Search here anything" />
+                <button class="absolute right-1 lg:right-[41%] top-[4px] lg:top-[2px] rounded-[50px] bg-[#797DFC] px-[20px] py-[8px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white">Search</button>
+              </div>
+            </div>
+            <div class="w-[100%] lg:w-[45%] bg-white rounded-[32px] p-[50px] space-y-6">
+              <div class="flex justify-between">
+                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Registered Users</h4>
+                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">01</p>
+              </div>
+              <div class="flex justify-between">
+                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Forum</h4>
+                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">05</p>
+              </div>
+              <div class="flex justify-between">
+                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Topics</h4>
+                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">01</p>
+              </div>
+              <div class="flex justify-between">
+                <h4 class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">Replies</h4>
+                <p class="text-[#12132DCC] text-[16px] lg:text-[24px] font-medium">02</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

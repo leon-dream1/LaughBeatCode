@@ -8,10 +8,12 @@
 
 a {
   text-decoration: none;
+  padding: 0;
 }
 
 ul li {
   list-style: none;
+  padding: 0;
 }
 
 img {
@@ -33,13 +35,13 @@ img {
   color: var(--secondary);
 }
 .text-description {
-    color: var(--description)
+  color: var(--description);
 }
 
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-/* Common Css End */
 
+/* Common Css End */
 
 /* https://github.com/Programming-Hero-Web-Course4/b9a6-retro-forum-leon-dream1 */
