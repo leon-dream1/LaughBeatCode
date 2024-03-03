@@ -63,7 +63,9 @@ const loadAllPost = async () => {
           </div>
         </div>
         <div class="">
-          <img src="./images/email.png" alt="" />
+          <img onclick="addReadPost(${post.id}, '${post.title}', ${
+            post.view_count
+          })" class='cursor-pointer' src="./images/email.png" alt="" />
         </div>
       </div>
     </div>
@@ -73,3 +75,27 @@ const loadAllPost = async () => {
   });
 };
 loadAllPost();
+
+
+const addReadPost = (postId, postTitle, postViewCount) => {
+  console.log(postId, postTitle, postViewCount);
+  const markAsReadContainer = document.getElementById("mark-as-read-container");
+  const div = document.createElement('div');
+  div.innerHTML = `<div class="bg-white rounded-[16px] p-[15px]">
+  <div class="flex justify-between">
+    <h4>${postTitle}</h4>
+    <div class="flex gap-4">
+      <img
+        class="w-[28px] h-[28px]"
+        src="./images/eye.png"
+        alt=""
+      />
+      <p>${postViewCount}</p>
+    </div>
+  </div>
+</div>
+  `
+  markAsReadContainer.appendChild(div);
+  const countReadPost = parseInt(document.getElementById('count-read-post').innerText);
+  document.getElementById('count-read-post').innerText = countReadPost + 1;
+};
