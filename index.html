@@ -130,11 +130,13 @@
               </p>
               <div class="relative">
                 <input
+                id="search-post"
                   class="h-[50px] w-[100%] lg:w-[60%] rounded-[32px] bg-white px-[20px] outline-none"
                   type="text"
                   placeholder="Search here anything"
                 />
                 <button
+                onclick="searchedPost()"
                   class="absolute right-1 lg:right-[41%] top-[4px] lg:top-[2px] rounded-[50px] bg-[#797DFC] px-[20px] py-[8px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white"
                 >
                   Search
@@ -221,7 +223,7 @@
             <span class="loading loading-bars loading-md"></span>
             <span class="loading loading-bars loading-lg"></span>
           </div>
-          <div class="flex flex-col lg:flex-row gap-6 mt-[50px]">
+          <div class="flex flex-col lg:flex-row gap-6 mt-[40px] lg:mt-[50px]">
             <div id="post-container" class="w-[100%] lg:w-[60%]">
               <!-- <div
                 class="post flex flex-row mb-5 bg-[#F3F3F5] rounded-[24px] p-[40px] gap-[24px]"
@@ -285,7 +287,7 @@
               </div> -->
             </div>
             <div
-              class="read-container w-[100%] lg:w-[40%] bg-[#12132D0D] rounded-[24px] lg:p-10"
+              class="read-container w-[100%] lg:w-[40%] bg-[#12132D0D] rounded-[12px] lg:rounded-[24px] p-2 lg:p-10"
             >
               <div class="flex justify-between">
                 <h4 class="text-[#12132D] text-[20px] font-bold">Title</h4>
@@ -324,12 +326,12 @@
       <section class="latest-posts my-[100px]">
         <div class="container mx-auto">
           <h3
-            class="text-[20px] lg:text-[40px] text-[#12132D] font-black text-center mb-6"
+            class="text-[24px] lg:text-[40px] text-[#12132D] font-black text-center mb-6"
           >
             Latest Posts
           </h3>
           <p
-            class="w-[100%] lg:w-[60%] mx-auto text-center text-[#12132D99] text-[18px] font-inter font-normal"
+            class="w-[100%] lg:w-[60%] mx-auto text-center text-[#12132D99] text-[18px] font-inter font-normal p-[10px] lg:p-0"
           >
             In our latest post on the online forum, we're diving into the
             exciting world of coding, music, and humor! Join us on a journey
@@ -344,7 +346,7 @@
           </div>
           <div
             id="latest-post-container"
-            class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-[50px]"
+            class="grid grid-cols-1 lg:grid-cols-3 m-2 lg:m-0 gap-6 mt-[50px]"
           >
             <!-- <div
               class="bg-white border border-[#12132D26] rounded-[24px] p-[24px] space-y-6"
