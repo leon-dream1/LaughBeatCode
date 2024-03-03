@@ -198,13 +198,13 @@
       </div>
     </header>
     <main>
-      <section class="discuss m-[100px]">
+      <section class="discuss mt-[100px] p-[10px] lg:p-0">
         <div class="container mx-auto">
-          <h4 class="text-[40px] text-[#12132D] font-black text-center mb-6">
+          <h4 class="text-[20px] lg:text-[40px] text-[#12132D] font-black text-center mb-6">
             Let’s Discuss
           </h4>
           <p
-            class="w-[60%] mx-auto text-center text-[#12132D99] text-[18px] font-inter font-normal"
+            class="w-[100%] lg:w-[60%] mx-auto text-center text-[#12132D99] text-[18px] font-inter font-normal"
           >
             Welcome to our vibrant community where coding meets fun and music!
             In this dynamic forum, we celebrate the fusion of technology,
@@ -213,8 +213,8 @@
             explore the intersection of these diverse worlds, you've come to the
             right place.
           </p>
-          <div class="flex flex-row mt-[50px]">
-            <div id="post-container" class="w-[60%]">
+          <div class="flex flex-col lg:flex-row gap-6 mt-[50px]">
+            <div id="post-container" class="w-[100%] lg:w-[60%]">
                <!-- <div
                 class="post flex flex-row mb-5 bg-[#F3F3F5] rounded-[24px] p-[40px] gap-[24px]"
               >
@@ -276,7 +276,38 @@
                 </div>
               </div> -->
             </div>
-            <div id="mark-as-read-container" class="w-[40%]"></div>
+            <div class="read-container w-[100%] lg:w-[40%] bg-[#12132D0D] rounded-[24px] lg:p-10">
+              <div class=" flex justify-between">
+                <h4 class="text-[#12132D] text-[20px] font-bold">Title</h4>
+                <div class="flex gap-4">
+                  <img
+                    class="h-[24px] w-[24px]"
+                    src="./images/tik.png"
+                    alt=""
+                  />
+                  <p
+                    class="text-[#12132D99] text-[16px] font-inter font-normal"
+                  >
+                    Mark as read(<span id="count-read-post">0</span>)
+                  </p>
+                </div>
+              </div>
+              <div id="mark-as-read-container" class="mt-[20px] space-y-4">
+                <!-- <div class="bg-white rounded-[16px] p-[15px]">
+                  <div class="flex justify-between">
+                    <h4>10 Kids Unaware of Their Halloween Costume</h4>
+                    <div class="flex gap-4">
+                      <img
+                        class="w-[28px] h-[28px]"
+                        src="./images/eye.png"
+                        alt=""
+                      />
+                      <p>1500</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
           </div>
         </div>
       </section>
