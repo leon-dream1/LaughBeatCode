@@ -78,7 +78,7 @@ const loadAllPost = async (category) => {
               <img class="w-[20%] lg:w-[100%] mx-auto lg:mx-0" src="./images/clock.png" alt="" />
               <span class="text-[16px] text-[#12132D99] font-normal font-inter text-center lg:text-start">${
                 post.posted_time
-              }</span>
+              }min</span>
             </div>
           </div>
         </div>
