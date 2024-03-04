@@ -148,7 +148,7 @@ const loadLatestPost = async () => {
   data.forEach((latestPost) => {
     const div = document.createElement("div");
     div.innerHTML = `<div
-     class="bg-white border border-[#12132D26] rounded-[24px] p-[20px] space-y-6"
+     class="bg-white border border-[#12132D26] rounded-[24px] p-[20px] space-y-6 m-2 lg:m-0"
    >
      <img class='rounded-[20px]' src=${latestPost.cover_image} alt="" />
      <div class="flex flex-row gap-6">

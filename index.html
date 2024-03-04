@@ -17,6 +17,15 @@
     <!-- Custom Css link -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Tailwind css and DaisyUI Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -67,28 +76,28 @@
                   <img
                     class="inline w-[30%] mb-[40px]"
                     src="./images/home.png"
-                    alt=""
+                    alt="Home"
                   />
                 </li>
                 <li title="Edit">
                   <img
                     class="inline w-[30%] mb-[40px]"
                     src="./images/edit.png"
-                    alt=""
+                    alt="Edit"
                   />
                 </li>
                 <li title="Add">
                   <img
                     class="inline w-[30%] mb-[40px]"
                     src="./images/add.png"
-                    alt=""
+                    alt="Add"
                   />
                 </li>
                 <li title="Flag">
                   <img
                     class="inline w-[30%] mb-[40px]"
                     src="./images/flag.png"
-                    alt=""
+                    alt="Flag"
                   />
                 </li>
               </ul>
@@ -130,13 +139,13 @@
               </p>
               <div class="relative">
                 <input
-                id="search-post"
+                  id="search-post"
                   class="h-[50px] w-[100%] lg:w-[60%] rounded-[32px] bg-white px-[20px] outline-none"
                   type="text"
                   placeholder="Search here anything"
                 />
                 <button
-                onclick="searchedPost()"
+                  onclick="searchedPost()"
                   class="absolute right-1 lg:right-[41%] top-[4px] lg:top-[2px] rounded-[50px] bg-[#797DFC] px-[20px] py-[8px] text-[16px] md:text-[20px] lg:text-[20px] font-bold text-white"
                 >
                   Search
@@ -323,6 +332,33 @@
           </div>
         </div>
       </section>
+      <section class="join-forum mt-[100px]">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-center bg-[#12132D] lg:rounded-[32px] p-[20px] pt-[80px] lg:p-[90px] lg:gap-6 space-y-[50px] lg:space-y-0"
+          >
+            <div class="w-[100%] lg:w-[50%] space-y-8 text-center lg:text-start">
+              <h4 class="text-white text-[40px] font-black">Join Our Forum</h4>
+              <p
+                class="text-[18px] text-[#FFFFFFCC] font-medium leading-[30px]"
+              >
+                Joining is easy! Simply sign up and start participating in the
+                conversations. Don't miss out on the opportunity to connect with
+                a dynamic community of individuals who are passionate about
+                learning and sharing knowledge.
+              </p>
+              <button
+                class="bg-[#797DFC] rounded-[50px] px-[40px] py-[15px] text-white text-xl font-bold"
+              >
+                Register Now
+              </button>
+            </div>
+            <div class="w-[100%] lg:w-[50%]">
+              <img class="w-[80%] mx-auto" src="./images/joinforum.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="latest-posts my-[100px]">
         <div class="container mx-auto">
           <h3
@@ -346,7 +382,7 @@
           </div>
           <div
             id="latest-post-container"
-            class="grid grid-cols-1 lg:grid-cols-3 m-2 lg:m-0 gap-6 mt-[50px]"
+            class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-[50px]"
           >
             <!-- <div
               class="bg-white border border-[#12132D26] rounded-[24px] p-[24px] space-y-6"
@@ -379,7 +415,34 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#12132D0D] py-[60px] lg:py-[100px]">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col justify-center items-center space-y-6 lg:space-y-10"
+        >
+          <h4 class="text[#12132D] text-[24px] lg:text-[36px] font-black">
+            LaughBeatCode
+          </h4>
+          <p
+            class="w-[100%] lg:w-[50%] text-center text-[#12132DB2] text-[16px] font-normal leading-[28px] p-[10px] lg:p-0"
+          >
+            Stay connected with us on social media! Follow us on Facebook,
+            Instagram, Twitter, Github for updates, announcements, and exclusive
+            content. Engage with our community beyond the forum and be part of
+            the conversation across platforms. Connect with us today!
+          </p>
+          <div class="social-icon space-x-6 text-[24px] pb-[40px]">
+            <i class="fa-brands fa-twitter cursor-pointer"></i>
+            <i class="fa-brands fa-facebook cursor-pointer"></i>
+            <i class="fa-brands fa-instagram cursor-pointer"></i>
+            <i class="fa-brands fa-github cursor-pointer"></i>
+          </div>
+        </div>
+        <p class="border-t border-[#30325E1A] text-center pt-[40px]">
+          2024, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
